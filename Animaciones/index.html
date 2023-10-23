@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeza de hambre</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100wh;
+        height: 100vh;
+        background-color: rgba(176, 123, 186, 0.903);
+        display: grid;
+        place-items: center;
+        color: rgb(66, 4, 57);
+    }
+    .container {
+        width: 80%;
+        text-align: center;
+    }
+    .container * {
+        margin: 10px;
+    }
+    canvas {
+        background: rgb(180,58,116);
+        background: linear-gradient(90deg, rgba(180,58,116,1) 0%, rgba(159,54,128,1) 0%, rgba(217,71,227,1) 0%, rgba(95,75,212,1) 2%, rgba(146,87,147,1) 81%, rgba(156,81,115,1) 95%, rgba(159,57,158,1) 100%);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Cabeza Hambrienta de cupcakes</h1>
+        <canvas id="lienzo" width="650" height="400"></canvas>
+    </div>
+    <script src="./moves.js"></script>
+</body>
+</html>
