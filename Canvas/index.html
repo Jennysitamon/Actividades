@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo romantico</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100wh;
+        height: 100vh;
+        background-color: rgba(176, 123, 186, 0.903);
+        display: grid;
+        place-items: center;
+        color: rgb(66, 4, 57);
+    }
+    .container {
+        width: 80%;
+        text-align: center;
+    }
+    .container * {
+        margin: 10px;
+    }
+    canvas {
+        background: rgb(180,58,116);
+background: linear-gradient(90deg, rgba(180,58,116,1) 0%, rgba(159,54,128,1) 0%, rgba(217,71,227,1) 0%, rgba(159,117,57,1) 100%);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Gráficos 2D con HTML y JavaScript</h1>
+        <canvas id="lienzo" width="400" height="400"></canvas>
+    </div>
+    <script src="./dibujo.js"></script>
+</body>
+</html>
