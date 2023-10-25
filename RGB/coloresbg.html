@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores Background</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            width: 300px;
+            height: 250;
+            border-radius: 10px;
+            background-color: rgb(249, 188, 255);
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            width: 45%;
+            height: 100px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            background: radial-gradient(circle, rgb(77, 11, 77) 0%, rgb(116, 37, 121) 100%);
+            color: #dec2e3; 
+            margin: 12px;
+        }
+        button:hover {
+            background-color: burlywood;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores Background RBG</h1>
+        <h2></h2>
+        <button onclick="setColor()">Set Color</button>
+    </div>
+    <script src="./coloresbg.js"></script>
+    
+    
+</body>
+</html>

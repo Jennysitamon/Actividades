@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores con Inputs</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .container button:hover {
+            background-color: #2980b9;
+        }
+        .container {
+            width: 400px;
+            height: 300px;
+        }
+        .container * {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores con Inputs</h1>
+        <h2>Arrastra y Aplica</h2>
+        <input type="range" name="" id="pink" value="0">
+        <br>
+        <input type="range" name="" id="purple" value="0">
+        <br>
+        <input type="range" name="" id="golden" value="0">
+        <br>
+        <button onclick="setColor()">Set Color</button>
+    </div>
+    <script src="./coloresinput.js"></script>
+    
+</body>
+</html>
