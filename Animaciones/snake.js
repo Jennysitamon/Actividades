@@ -4,8 +4,9 @@ const resultado = document.querySelector('span');
 
 let direction = 1;
 
-let contador = 0;
-resultado.innerHTML = contador;
+contador = 0;
+resultado.innerHTML=contador;
+
 
 const snake = [];
 snake.push({
@@ -15,7 +16,7 @@ snake.push({
     yNext: 0,
     pinta: function () {
         ctx.font = '25px Serif';
-        ctx.fillText('🐵', this.x * 20, this.y * 20);
+        ctx.fillText('🙉', this.x * 20, this.y * 20);
     }
 });
 
@@ -26,7 +27,7 @@ snake.push({
     yNext: snake[0].y,
     pinta: function () {
         ctx.font = '25px Serif';
-        ctx.fillText('🐵', this.x * 20, this.y * 20);
+        ctx.fillText('🙉', this.x * 20, this.y * 20);
     }
 });
 
@@ -37,7 +38,7 @@ snake.push({
     yNext: snake[1].y,
     pinta: function () {
         ctx.font = '25px Serif';
-        ctx.fillText('🐵', this.x * 20, this.y * 20);
+        ctx.fillText('🙉', this.x * 20, this.y * 20);
     }
 });
 
@@ -77,12 +78,12 @@ setInterval(() => {
     snake.forEach(cuadrito => cuadrito.pinta());
     if (snake[0].x === comida.x && snake[0].y === comida.y) {
         comida.aparece();
-        const newCuadro = { ...snake[1] };
+        const newCuadro = { ...snake[0] };
         newCuadro.x = comida.x;
         newCuadro.y = comida.y;
         snake.push(newCuadro);
         contador++;
-        resultado.innerHTML = contador;
+        resultado.innerHTML=contador;
     }
 
     comida.pinta();

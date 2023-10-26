@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadros</title>
+    <title>Chango con hambre</title>
 </head>
 <style>
     body{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         width: 100wh;
         height: 95vh;
-        background-color: rgba(176, 123, 186, 0.903);
+        background-color: rgb(178, 119, 179);
         display: grid;
         place-items: center;
-        color: rgb(66, 4, 57);
+        color: rgb(175, 175, 175);
     }
     .container {
         width: 80%;
@@ -23,16 +23,17 @@
         margin: 10px;
     }
     canvas {
-        background: rgb(64, 24, 43);
-        background: linear-gradient(90deg, rgb(91, 53, 71) 0%, rgba(159,54,128,1) 0%, rgba(217,71,227,1) 0%, rgba(95,75,212,1) 2%, rgba(146,87,147,1) 81%, rgba(156,81,115,1) 95%, rgba(159,57,158,1) 100%);
+        background-color: rgba(255, 255, 255, 0.212);
+        box-shadow: 0px 0px 10px 5px rgb(139, 86, 130);
     }
 </style>
 
 <body>
     <div class="container">
-        <h1>Chango con hambre</h1>
+        <h1>Changuito con Hambre</h1>
+        <h2>Se ha comido <span></span>pollitos tristes</h2>
         <canvas id="lienzo" width="600" height="400"></canvas>
     </div>
-    <script src="./rebota.js"></script>
+    <script src="./snake.js"></script>
 </body>
 </html>
